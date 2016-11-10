@@ -1,0 +1,170 @@
+
+@font-face { /* Define a new font called LearningCurveProRegular */
+    font-family: 'WOODENNI';
+    src: url('font/WOODENNI-webfont.eot');
+    src: url('font/WOODENNI-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/WOODENNI-webfont.woff') format('woff'),
+         url('font/WOODENNI-webfont.ttf') format('truetype'),
+         url('font/WOODENNI-webfont.svg#WOODENNI') format('svg');
+}
+
+
+body {
+background: url("../img/ubuntu.jpg");
+color: #FFFFFF;
+margin:0;
+padding:0;
+width: 99%;
+}
+
+/**{
+
+    border: 0.1em #00B6FF outset;
+}*/
+
+#left_wrapper, #main_wrapper {
+    display: table-cell;
+}
+
+#left_wrapper{    
+	/*border-radius: 0.5em 0.5em 0.5em 0.5em;*/
+	background: url('../img/paradise.jpg');
+	background-size:contain ;
+	background-repeat:no-repeat;  
+	max-width:100%;
+	max-height:100%;
+}
+
+
+#main_wrapper
+{
+	vertical-align: top;
+	width: 86%;
+}
+
+@media all and (max-width: 1024px)
+{
+    #left_wrapper
+    {
+        display: none;
+    }
+
+    #main_wrapper
+	{
+		width: 100%;
+	}
+   
+}
+
+header  {
+    position: relative;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div {
+    display: inline-block;
+}
+
+
+#main_title {
+	width: 90%;
+	text-align: center;
+    vertical-align:middle;
+
+}
+
+
+
+#picture{
+    display: inline-block;
+    vertical-align:middle;
+
+}
+
+#cvpicture
+{
+    /*position: absolute;*/
+    top: 0.5em;
+    right: 0.1em;
+    border: 0.1em #00B6FF outset;
+    box-shadow: 0.1em 0.1em 1.5em #00B6FF;
+    width: 6em;
+}
+
+
+h1, .presentation {
+	text-align: center;
+	font-family: "WOODENNI", "Arial", "Verdana", "sans-serif";
+	word-wrap: break-word;
+}
+
+ .presentation {
+ 	font-size: .8em;
+ }
+
+
+@media all and (max-width: 1024px)
+{
+
+    #main_title{
+		width: 75%;
+	}
+}
+
+
+h2 {
+	color: #00B6FF;	
+}
+
+section {
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+#experience{
+	width: 30%;
+}
+
+#skills{
+	width: 30%;
+}
+
+#education{
+	width: 30%;
+
+}
+
+@media all and (max-width: 1024px)
+{
+    section
+    {
+        width: auto;
+        display: block;
+        margin-bottom: 15px;
+    }
+
+    #experience{
+		width: auto;
+	}
+
+	#skills{
+		width: auto;
+	}
+
+	#education{
+		width: auto;
+
+	}
+}
+
+/* On screens with a maximum window width of 1280px */
+/*@media only screen and (max-width: 1280px){
+}
+*/
+/* On all screen types with a window width of between 1024px and 1280px */
+/*@media all and (min-width: 1024px) and (max-width: 1280px){
+}*/

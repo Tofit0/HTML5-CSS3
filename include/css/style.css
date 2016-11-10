@@ -1,0 +1,50 @@
+/*
+Feuille de style principale
+if "class" = ".[nom_class]"
+if "id" = "#[nom_class]"
+
+A[attribut]: a tag that has an attribute
+	Selects all the <a> links that have a title attribute => a[title]
+	a[title="Click here"]{....}
+
+*/
+/* 
+@font-face { /* Define a new font called LearningCurveProRegular */
+   /*  font-family: 'LearningCurveProRegular';
+    src: url('font/LearningCurve_OT-webfont.eot');
+    src: url('font/LearningCurve_OT-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/LearningCurve_OT-webfont.woff') format('woff'),
+         url('font/LearningCurve_OT-webfont.ttf') format('truetype'),
+         url('font/LearningCurve_OT-webfont.svg#LearningCurveProRegular') format('svg');
+}
+*/ 
+
+/* ul {
+font-family: "LearningCurveProRegular", sans-serif;
+} */
+table
+{
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+td, th /* Assign a border to the td AND th tags */
+{
+    border: 1px solid black;
+}
+
+/* Paragraphs blue as default */
+p
+{
+    color: blue;
+}
+
+/* New rules if the window width is smaller than 1024px */
+@media screen and (max-width: 1024px)
+{
+    p
+    {
+        color: red; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+}
